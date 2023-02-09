@@ -3,6 +3,7 @@ let hacker1 = "Maria"
 console.log(`The driver's name is ${hacker1}`)
 let hacker2 = "Belen"
 console.log(`The navigator's name is ${hacker2}`)
+
 // Iteration 2: Conditionals
 if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
@@ -16,7 +17,7 @@ if (hacker1.length > hacker2.length) {
 // print it with spaces and uppercase
 let hacker1Space ="";
 for (const value of hacker1) {
-  hacker1Space += value.toUpperCase() + " "
+  hacker1Space += value.toUpperCase() + " ";
 }
 console.log(hacker1Space)
 
@@ -54,4 +55,18 @@ for (let i=0; i<longText.length; i++) {
 
 console.log(wordsCounter)
 
-//
+//phraseToCheck
+
+let phraseToCheck = "race car"
+
+let phraseToCheckJoined = phraseToCheck.toLowerCase().replaceAll(" ", "");
+let phraseToCheckReversed = "";
+for(let i=phraseToCheckJoined.length -1; i>=0; i--) {
+    phraseToCheckReversed += phraseToCheckJoined[i];
+};
+
+if (phraseToCheckJoined === phraseToCheckReversed) {
+    console.log("palindrome")
+} else {
+    console.log("not now")
+}
